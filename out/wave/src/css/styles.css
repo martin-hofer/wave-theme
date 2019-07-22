@@ -10158,6 +10158,9 @@ body {
   background-image: none;
   border-color: #dee2e6; }
 
+span.badge:empty {
+  display: none !important; }
+
 .currencies-menu .dropdown-item {
   font-size: .75rem; }
   .currencies-menu .dropdown-item.active, .currencies-menu .dropdown-item.selected, .currencies-menu .dropdown-item:hover {
@@ -10429,6 +10432,12 @@ body {
               transition: color .2s; } }
     .header .navbar .nav-link {
       color: #009EC0; }
+    .header .navbar .nav .moreLinks > .nav-link {
+      cursor: default; }
+    .header .navbar .nav .moreLinks > .nav-link::after {
+      display: none; }
+    .header .navbar .nav .moreLinks .dropdown-menu .fa-angle-down {
+      display: none; }
   .header .dropdown-toggle > .badge {
     background: #FC6621;
     color: #fff;
