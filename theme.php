@@ -278,6 +278,13 @@ $aTheme = array(
             'constraints' => 'infogrid|line|grid',
         ),
         array(
+            'group'       => 'display',
+            'name'        => 'sNavigationType',
+            'type'        => 'select',
+            'value'       => 'horizontal',
+            'constraints' => 'horizontal|vertical',
+        ),
+        array(
             'group' => 'googlets',
             'name'  => 'sDeliveryDaysNotOnStock',
             'type'  => 'str',

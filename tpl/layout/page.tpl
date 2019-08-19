@@ -9,6 +9,10 @@
 
     [{assign var="blFullwidth" value=$oViewConf->getViewThemeParam('blFullwidthLayout')}]
 
+    [{if $oViewConf->getViewThemeParam('sNavigationType') == 'vertical'}]
+        [{assign var=sidebar value="Left"}]
+    [{/if}]
+
     <div id="wrapper" [{if $sidebar}]class="sidebar[{$sidebar}]"[{/if}]>
 
         <div class="underdog">

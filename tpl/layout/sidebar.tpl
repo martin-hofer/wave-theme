@@ -4,18 +4,18 @@
 
 [{block name="sidebar"}]
     [{block name="sidebar_categoriestree"}]
-        [{if $oView->getClassName() == 'alist' }]
-            <div class="box card categorytree">
-                <section>
+        [{if $oView->getClassName() == 'alist' || $oViewConf->getViewThemeParam('sNavigationType') == 'vertical'}]
+            <section>
+                [{if $oViewConf->getViewThemeParam('sNavigationType') != 'vertical'}]
                     <div class="page-header h3">
                         <div class="pull-right visible-xs visible-sm">
                             <i class="fa fa-caret-down toggleTree"></i>
                         </div>
                         [{oxmultilang ident="CATEGORIES"}]
                     </div>
-                    [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() deepLevel=0 noscript=1 nocookie=1}]
-                </section>
-            </div>
+                [{/if}]
+                [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() deepLevel=0 noscript=1 nocookie=1}]
+            </section>
         [{/if}]
     [{/block}]
 

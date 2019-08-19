@@ -89,6 +89,7 @@ INSERT INTO `oxconfigdisplay` (`OXID`, `OXCFGMODULE`, `OXCFGVARNAME`, `OXGROUPIN
 (uuid(), 'theme:wave', 'sCatPromotionsize', 'images', '', 8, NOW()),
 (uuid(), 'theme:wave', 'sDefaultListDisplayType', 'display', 'infogrid|line|grid', 21, NOW()),
 (uuid(), 'theme:wave', 'sStartPageListDisplayType', 'display', 'infogrid|line|grid', 22, NOW()),
+(uuid(), 'theme:wave', 'sNavigationType', 'display', 'horizontal|vertical', 23, NOW()),
 (uuid(), 'theme:wave', 'blShowListDisplayType', 'display', '', 20, NOW()),
 (uuid(), 'theme:wave', 'iNewBasketItemMessage', 'display', '0|1|2|3', 17, NOW()),
 (uuid(), 'theme:wave', 'aNrofCatArticles', 'display', '', 23, NOW()),

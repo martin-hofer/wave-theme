@@ -167,6 +167,9 @@ $aLang = array(
     'SHOP_THEME_sBackgroundSize_contain'            => 'cover (full width)',
     'SHOP_THEME_sBackgroundSize_normal'             => 'Keep original size',
     'SHOP_THEME_blBackgroundAttachment'             => 'Fix background while scrolling?',
+    'SHOP_THEME_sNavigationType'                    => 'Main navigation',
+    'SHOP_THEME_sNavigationType_horizontal'         => 'horizontal',
+    'SHOP_THEME_sNavigationType_vertical'           => 'vertical',
 
     'SHOP_THEME_blUseGoogleTS'                      => 'Use Google Trusted Stores',
     'SHOP_THEME_sGoogleVendorId'                    => 'Google Store-ID',
